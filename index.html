@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone Hunter</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="text-orange-300">Phone Hunter</div>
+    </header>
+    <main>
+      <section class="container mx-auto my-4">
+        <div class="my-5">
+          <!-- serch start -->
+          <input
+            id="search-filed"
+            type="text"
+            placeholder="Search Your Phone"
+            class="input input-bordered w-full max-w-xs"
+          />
+          <button onclick="handClickSearch()" class="btn btn-success">
+            Search
+          </button>
+        </div>
+      </section>
+      <!-- spinner -->
+      <section
+        id="loading-spinner"
+        class="container hidden text-center mx-auto my-5"
+      >
+        <span class="loading loading-spinner my-[10%] loading-lg"></span>
+      </section>
+      <section class="container mx-auto">
+        <div
+          id="card-add"
+          class="grid container mx-auto grid-cols-1 md:grid-cols-4 gap-4"
+        ></div>
+      </section>
+      <section
+        id="see-more-btn"
+        class="container hidden mx-auto text-center my-5"
+      >
+        <div><button class="btn btn-warning">See More Phones</button></div>
+      </section>
+    </main>
+    <footer></footer>
+    <!-- script src link  -->
+    <script src="js/script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
