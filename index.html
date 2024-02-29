@@ -46,7 +46,31 @@
         id="see-more-btn"
         class="container hidden mx-auto text-center my-5"
       >
-        <div><button class="btn btn-warning">See More Phones</button></div>
+        <div>
+          <button onclick="handleShowAll()" class="btn btn-warning">
+            See More Phones
+          </button>
+        </div>
+      </section>
+      <!-- showModal Details  -->
+      <section>
+        <!-- Open the modal using ID.showModal() method -->
+        <!-- <button class="btn" onclick="">open modal</button> -->
+        <dialog
+          id="show_details_modal"
+          class="modal modal-bottom sm:modal-middle"
+        >
+          <div class="modal-box">
+            <h3 id="phone-details-name" class="font-bold text-lg"></h3>
+            <div id="details-container" class="container mx-auto"></div>
+            <div class="modal-action">
+              <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn bg-red-500">Close</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
       </section>
     </main>
     <footer></footer>
