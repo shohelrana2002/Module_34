@@ -88,8 +88,12 @@ const showModal = (phone) => {
   <p>${`<span class="text-[red] font-bold ">Slug: </span>${phone.mainFeatures.chipSet}`}</p>
   <p>${`<span class="text-[red] font-bold ">Sensors:</span>${phone.mainFeatures.sensors}`}</p>
   <p>${`<span class="text-[red] font-bold ">Release Date: </span>${phone.releaseDate}`}</p>
-  <p>${`<span class="text-[red] font-bold ">GPS: </span>${phone?.others?.GPS}`}</p>
-  <p>${`<span class="text-[red] font-bold ">WLAN: </span>${phone?.others?.WLAN}`}</p>
+  <p>${`<span class="text-[red] font-bold ">GPS: </span>${
+    phone?.others?.GPS || " Not Aviable Now"
+  }`}</p>
+  <p>${`<span class="text-[red] font-bold ">WLAN: </span>${
+    phone?.others?.WLAN || " Not Aviable Now"
+  }`}</p>
 
    `;
   show_details_modal.showModal();
